@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <section class = "header"> <!--The start of my header section, this will be displayed permanently on my screen, even if scrolled down.-->
+      <a href="#"> <img src = "images/more.png" class = "more" id = "more"> <!--Creates my 'more' image, the three bars displayed on the top left of the page and far left in my header section.--> </a>
+    <div class = "navigationbar" id = "navigationbar"> <!-- Creates my navigationbar div, This is where the webpage options will go.-->
+      <a href = "/Order/"> Order </a>
+      <a href = "/Offers/"> Offers </a>
+      <a href = "/Menu/"> Menu </a>
+      <a href = "/Delivery/"> Delivery </a>
+      <a href = "/More/"> More </a><!--Links-->
+    </div><!--Closes the navigationbar div-->
+      <a href="#"> <img src = "images/logo.PNG" class = "logo" id = "logo"> <!--Displayed the burger king logo, i have used both class and id so i can manipulate it in both JavaScript and CSS.--> </a>
+    <div class = "headerbuttons" id = "headerbuttons"><!-- Creates my headerbutton div, this will be used to create the container where the buttons on the end of the header will go, checkout and sign in.-->
+      <div class = "signup" id = "signup"><!--Seperate div for my signup button, makes it easier to manipulate on its own as the buttons are different colours.-->
+        <a href = "/Sign Up/">Sign Up</a> <!--I have used HTML 'a' to create links, this will be suitable as in the real burger website the buttons take you to another page when clicked.-->
+      </div> <!--Closes my signup div-->
+      <div class ="checkout" id = "checkout"><!--The start of mu checkout div-->
+        <a href = "/Checkout/">&emsp;£0.00</a>
+      </div><!--Closes my checkout div-->
+    </div><!--Closes my headerbuttons div-->
+    </section><!--Closes my header section-->
+
+      <img src = "images/Splash1.PNG" id = "splash" class = "splash"> <!--Displays the splash image.-->
+
+    <section class = "row" id = "row"><!--The start of my row div, this div will display the 4 images in 2 containers side by side in the middle of the screen.-->
+      <a class = "splashrow" id = "splashrow"><!--The start of one of my splash rows, made to display this div on the top of the other splashrow div later made.-->
+        <a onclick = "Imglinks()"><!--These 'a' links will redirect you to the burger king signup page thanks to the "ImgLinks" variable i have made in JavaScript.-->
+          <img src = "images/minisplash1.PNG"><!--This will display one of the splash images. One out of four.-->
+        </a><!--Closes the link element.-->
+        <a onclick = "Imglinks()">
+          <img src = "images/minisplash2.PNG">
+        </a>
+      <div class = "splashrow" id = "splashrow"><!--Opens the second splashrow div, sits below the first div-->
+        <a onclick = "Imglinks()">
+          <img src = "images/minisplash3.PNG">
+        </a>
+        <a onclick = "Imglinks()">
+          <img src = "images/minisplash4.PNG"> 
+        </a>
+      </div>
+    </div><!--Closes the two splashrow divs.-->
+    </section><!--Closes the row section.-->
+    
+    <section class = "phonesection" id = "phonesection"><!--The start of my phone section, this section will cut-off the background for a slightly darker color.-->
+      
+      <img src = "images/phone.png" class = "phoneimg" id = "phoneimg"><!--Displays the phone image.-->
+      
+      <aside class = "phonecolumn"><!--The start of my aside container, this will hold the header, button links and paragraph. Displayed alongside the phone image.-->
+        
+          <h1 class = "savemoney" id = "savemoney"> 
+        Save £££<br> With offers on<br> demand 
+          </h1><!--The Header used in the aside container.-->
+        
+      <div class = "apps" id = "apps"><!--This div will hold the app buttons, both buttons will redirect you to their respected websites.-->
+        <a onclick = "apple()"><!--This link will redirect you to the app store, uses a variable made in javascript.-->
+          <img src = "images/apple.png" class = "apple" id = "apple"> <!--Displays the image link for the apple app store-->
+        </a><!--Closes the link element-->
+        <a onclick = "windows()"><!--This link will redirect you to the windows store.-->
+          <img src = "images/google.png" class = "google" id = "google"><!--Displays the image link for the windows app store-->
+        </a><!--Closes the link element-->
+      </div> <!--Closes the app buttons-->
+        
+        <p class = "apptos" id = "apptos">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S.<br> and other countries. App Store is a service mark of Apple Inc. Google Play is a<br> trademark of Google Inc. Terms apply.</p><!--The paragraph displayed below the app buttons, the '<br>' is the start of a new line.-->
+      </aside> <!--Closes the aside element-->
+    </section> <!--Closes the section element-->
+
+    <footer class = "footer-container"><!--The start of my footer element, this will be displayed in a darker background different color similar to the phonesection. Will hold all of my footer elements.-->
+      <section class = "footer"><!--The first half of my footer, this will display both footer-heading divs in their respected columns.-->
+        <div class="footer-heading footer-1"><!--The first footer column, will display the elements in a column like nature.-->
+          <h2 id = "footerheading">BK® INFO</h2>
+          <a href = "#">About BK®</a>
+          <a href = "#">Policies</a>
+          <a href = "#">Get in Touch</a>            <!--<--Links-->
+          <a href = "#">Terms & Conditions</a>
+          <a href = "#">Guest Trac</a>
+          <a href = "#">Trademarks</a>
+        </div><!--Closes the first footer column div-->
+        <div class="footer-heading footer-2"><!--Opens the second footer column, is displayed on the left of the first footer column.-->
+          <h2 id = "footerheading2">BK® AND YOU</h2>
+          <a href = "#">Careers</a>
+          <a href = "#">Privacy Policy</a>          <!--<--More Links-->
+          <a href = "#">Modern Slavery Statement</a>
+          <a href = "#">Tax Strategy</a>
+          <a href = "#">BK® Delivers</a>
+        </div><!--Closes the second footer column div-->
+      </section><!--Closes the section-->
+          <hr> <!--This will display the white line seperating the footer columns from the footer end.-->
+      <section class = "footer2"><!--The start of the end of my footer, displayed on the very bottom of my webpage.-->
+        <div class = footer2-heading><!--This div will contain the header, link and images.-->
+          <h2>BURGER KING</h2> <!--Burger king header-->
+          <div class = "footer2-end"> <!--Start of the footer2-end div, will hold all of the image links.-->
+          <a href = "#"> <img src = "images/engb.PNG"> </a>
+          <div class = "footer2-end-socials"><!--Start of the footer2-end-socials div, will hold all of the image links for social media.-->
+            <a href = "#"> <img src = "images/insta.PNG"> </a>
+            <a href = "#"> <img src = "images/facebook.PNG"> </a>
+            <a href = "#"> <img src = "images/youtube.PNG"> </a>
+            <a href = "#"> <img src = "images/twitter.PNG"> </a><!--Image links.-->
+          </div><!--End of the social media link div-->
+        </div>
+          <p>TM & Copyright 2021 Burger King Corporation. All Rights Reserved.</p>
+
+        </section>
+        </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

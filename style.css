@@ -1,0 +1,165 @@
+body{ /*Targets the whole of the body.*/
+  background-color: #EEE5D8; /*Colors the background to the same color the Burger king website uses.*/
+}
+
+.header{ /*Targets my "Header" Div. This div will store my navigation bar*/
+  height: 4.5em; /*Vertically adjusts how high my header element will be, 1em is equal to 16px.*/
+  width: 100%; /*Adjusts my header to stretch horizontally across the screen.*/
+  display: inline-block; /* display an element as an inline-level block container.*/
+  position: fixed; /*An important styling, it keeps the header element in the same place on the screen even if scrolled down.*/
+  top: 0; /*Positions the header div on the top of the screen, without it there will be a small empty space that you can see through.*/
+  background-color: #EEE5D8;/*Colors the header to the same color the Burger king website uses.*/
+}
+
+.navigationbar a:link{ /*Targets the links in the navigation bar*/
+  color: #371A0A;
+  text-decoration: none;/*Removes text styling, in this case removes the underline that comes with using 'a' elements.*/
+  margin-left: 1.3rem;/*Creates space on the left side of the element.*/
+}
+
+.navigationbar a:hover{/*Does something when hovered.*/
+  color: red;/*Changes the color of my header buttons when hovered over.*/
+  text-decoration: none;
+}
+.navigationbar a:active{/*Does something when clicked*/
+  color: red;/*Changes the color of my header buttons when clicked.*/
+  text-decoration: none;
+} 
+
+.headerbuttons a:link{/*Targets the links in the navigation bar.*/
+  text-decoration: none;
+  margin: 1rem;/*Creates space all around the element.*/
+  font-size: 14px; /*Changes the size of the font.*/
+  text-align: center;/*Moves the text to the center.*/
+  color: white;
+  font-weight:bold;/*Makes the font bolder.*/
+}
+
+.signup{
+  margin: 4px 12px; /*Adds space to the top and the sides of the element.*/
+}
+
+.headerbuttons a:hover{
+  background-color: #AF4416;
+  transition:background-color 100ms ease-in; /*Makes it so that the button changes color in a stylish way with the transition.*/
+  text-decoration: none;
+  border: 2px solid #AF4416;
+}
+
+.headerbuttons a:active{
+  color: red;
+} 
+
+.checkout{
+  background-color:#371A0A;
+  border: 3px solid #371A0A;
+  border-radius: 50px;
+  margin: 4px 12px;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.splashcolumn{
+  flex:50%;
+  padding:0 4px;
+}
+
+.splashcolumn img{
+  margin-top:8px;
+  vertical-align: middle;
+}
+
+.phonecolumn{
+  align-items: flex-start;
+}
+
+.phoneimg{
+  width:17%;
+  height:17%;
+}
+
+.phonesection{
+  display: flex;
+  flex-direction: row;
+  background-color: #F5E2C7;
+  height: 40%;
+}
+
+.apps img{
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.apple{
+  margin-left: 1rem;
+}
+
+.apptos{
+  color: #371A0A;
+}
+
+.footer-container{
+  background-color: #2b0200;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  background-color: #2b0200;
+  display: flex;
+  width: 80%;
+  justify-content: left;
+  padding-left:8rem;
+  padding-bottom:3rem;
+  padding-top:4rem;
+}
+
+.footer a{
+  color:#bba38e;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer a:hover{
+  text-decoration: underline;/*Underlines the text once hovered over with the curser*/
+}
+
+.footer-heading {
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-1{
+  padding-right: 40rem;
+}
+
+hr{
+  color:#bba391;
+  width: 87%;
+}
+
+.footer2 {
+  width: 87%;
+  padding-left:8rem;
+  color:#bba391;  
+}
+
+.footer2 h2{
+  color: white;
+  font-family: "Cooper Black", Arial, sans-serif;;
+}
+
+.footer2-end {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-left: 8rem;
+}
+
+.footer2-end-socials a:hover{
+  background-color: red;
+}
